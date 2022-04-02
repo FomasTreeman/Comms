@@ -1,0 +1,146 @@
+body {
+   background-color: rgb(53, 53, 53) !important;
+   color: whitesmoke !important;
+   height: auto;
+}
+
+#features {
+   position: fixed;
+   width: 100vw;
+   top: 0;
+   margin: 0;
+   padding: 0;
+   background-color: rgb(66, 66, 66);
+}
+
+#features * {
+   display: flex;
+   margin: 10px;
+}
+
+#no_chat {
+   position: absolute;
+   margin: 42%;
+   margin-top: 40vh;
+   white-space:nowrap;
+}
+
+#divider {
+   margin: 0;
+   border-top: 1px solid rgb(167, 166, 166);
+}
+
+#activeConvoName {
+   font-size: xx-large;
+   margin: auto;
+   justify-content: center;
+}
+
+#demoBTN {
+   margin-left: auto;
+}
+
+#offcanvasContainer {
+   background-color: darkslateblue;
+}
+
+.btn-success {
+   border-radius: 50% !important;
+   margin-left: 2% !important;
+ }
+
+ #form { 
+   display: flex;
+   margin-right: auto;
+   margin-left: 4%;
+}
+
+#loginReg {
+   position: absolute;
+   width: 100%;
+   bottom: 1%;
+   display: flex;
+   justify-content:space-between;
+}
+
+#offcanvasFooter {
+   display: flex;
+   bottom: 0px; 
+   width: auto;
+   margin: auto; 
+   padding-bottom: 2px; 
+   font-size: small;
+}
+
+#friendsList {
+   display: flex;
+   width: 90%;
+   padding: 2%;
+   margin: auto;
+   align-items: center;
+}
+
+#friendsList > .btn {
+   margin-left: auto;}
+
+#friendsName {
+   padding-left: 7% !important;
+}
+
+#messagesContainer {
+   padding-bottom: 80px !important;
+   padding-top: 25px !important;
+}
+
+#recipient {
+   font-size: small;
+   opacity: 0.7;
+}
+
+#toastContainer {
+   bottom: 90px !important;
+}
+
+#toast {
+   background-color: darkslategrey;
+}
+
+#toastHead {
+   background-color: rgb(41, 67, 67);
+}
+
+.modal-content {
+   background-color: hotpink !important;
+   opacity: 0.9;
+}
+
+#right-side, #left-side {
+   width: auto;
+}
+
+#right-side {
+   text-align: right;
+   margin-left: auto;
+   margin-right: 5px;
+   background-color: rgb(23, 121, 59) !important;
+}
+
+#left-side {
+   text-align: left;
+   margin-left: 5px;
+}
+
+
+#messageInput {
+   position: fixed;
+   bottom: 0px;
+   background-color: rgb(41, 41, 41);
+}
+
+#loginBTNs {
+   display: flex;
+}
+
+#loginBTNs > .btn-primary  {
+   margin-left: auto;
+}
