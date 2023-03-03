@@ -36,6 +36,7 @@
       "last 1 safari version"
     ]
   },
+  "homepage": ".",
   "volta": {
     "node": "16.19.0"
   }
