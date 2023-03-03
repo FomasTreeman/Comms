@@ -13,12 +13,13 @@ export default function DrawerRight(props) {
 
   let usersFriends = friends.find(obj => obj.username === currentUser).friends.map(obj => { return obj.username });
 
-  console.log(usersInChat)
+  // console.log(usersInChat)
   const Avatars = [];
   usersInChat.map(obj => { return Avatars.push(avatar(obj.username, { size: 70 })) });
 
   function createToast() {
     toasts.push(Notification);
+    console.log(toasts);
     setToasts([...toasts]);
   }
 
@@ -89,7 +90,7 @@ export default function DrawerRight(props) {
     setActiveChat(0);
   }
 
-  var isDisabled;
+  let isDisabled;
   let usernamesInChat = usersInChat.map(obj => Object.entries(obj)[1][1]);
 
   return (

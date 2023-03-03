@@ -30,9 +30,9 @@ export default memo((props) => {
         const exists = users.filter(obj => obj["username"] === username)
 
         if (exists.length > 0) {
-            setCurrentUser(username)
-            setActiveChat(0)
-            show.current = false
+            setCurrentUser(username);
+            setActiveChat(0);
+            show.current = false;
             setValidated(true);
         } else {
             e.stopPropagation();
@@ -56,8 +56,8 @@ export default memo((props) => {
                         setShowRightDrawer(false);
                     }}>
                     <Form.Group className="mb-3" onChange={(e) => { setUsername(e.target.value) }} >
-                        <Form.Label>Username</Form.Label>
-                        <Form.Control required type="text" placeholder="Username" />
+                        <Form.Label htmlFor='userInput' >Username</Form.Label>
+                        <Form.Control required type="text" id='userInput' placeholder="Username" />
                     </Form.Group>
                     <div className="p-2" id="loginBTNs">
                         <Button onClick={() => { show.setShowLogin(false) }} variant="outline-dark">cancel</Button>

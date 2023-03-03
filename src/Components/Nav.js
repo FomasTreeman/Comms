@@ -17,7 +17,7 @@ function Nav(props) {
     return (
         <Row id="features">
             <Col>
-                <Button className="p-0" variant="dark" onClick={handleLeft} >
+                <Button className="p-0" aria-label='leftMenu' variant="dark" onClick={handleLeft} >
                     <CgMenu />
                 </Button>
             </Col>
@@ -25,7 +25,7 @@ function Nav(props) {
                 <DisplayChatName />
             </Col>
             <Col>
-                <Button className="p-0" id="demoBTN" variant="dark" onClick={handleRight} >
+                <Button className="p-0" aria-label='settings' id="demoBTN" variant="dark" onClick={handleRight} >
                     <GoSettings />
                 </Button>
             </Col>

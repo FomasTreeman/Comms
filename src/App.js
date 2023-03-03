@@ -24,7 +24,7 @@ function App() {
   
   const handleRight = useCallback(() => {setShowRightDrawer(true)}, [setShowRightDrawer]);
   const handleLeft = useCallback(() => {setShowLeftDrawer(true)}, [setShowLeftDrawer]);
-  console.log(usersChats.filter(obj => obj.chatId === activeChat && obj.username !== currentUser))
+  // console.log(usersChats.filter(obj => obj.chatId === activeChat && obj.username !== currentUser))
   useEffect(() => {
     setUsersInChat([...usersChats.filter(obj => obj.chatId === activeChat && obj.username !== currentUser)]);
   }, [setUsersInChat, activeChat, currentUser ]);

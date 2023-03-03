@@ -6,7 +6,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import GlobalContextProvider from './GlobalContext';
 
 ReactDOM.render(
-    <GlobalContextProvider subPages={(<App/>)}/>,
+  // <React.StrictMode>
+    <GlobalContextProvider subPages={(<App />)} />,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 
